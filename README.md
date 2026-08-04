@@ -4,7 +4,7 @@
 
 ## 구성
 
-- `backend/` — Express + TypeScript + SQLite (better-sqlite3) API 서버
+- `backend/` — Express + TypeScript + SQLite (Node.js 내장 `node:sqlite`) API 서버, Node.js 22.5 이상 필요
 - `frontend/` — React + Vite + TypeScript, Recharts 기반 대시보드
 
 ## 주요 기능

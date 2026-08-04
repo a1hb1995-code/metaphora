@@ -15,7 +15,7 @@ function addDays(d: Date, days: number): Date {
 function getAllTransactionsSorted(): TransactionRow[] {
   const rows = db
     .prepare("SELECT * FROM transactions ORDER BY trade_date ASC, id ASC")
-    .all() as TransactionRow[];
+    .all() as unknown as TransactionRow[];
   return rows;
 }
 

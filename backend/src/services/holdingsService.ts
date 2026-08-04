@@ -82,7 +82,7 @@ export interface HoldingWithMarketData extends HoldingAccumulator {
 }
 
 function getAllTransactions(): TransactionRow[] {
-  return db.prepare("SELECT * FROM transactions").all() as TransactionRow[];
+  return db.prepare("SELECT * FROM transactions").all() as unknown as TransactionRow[];
 }
 
 export async function getHoldings(): Promise<HoldingWithMarketData[]> {
