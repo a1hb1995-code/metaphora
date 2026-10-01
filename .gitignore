@@ -5,7 +5,3 @@ backend/data/
 .env
 .env.local
 .DS_Store
-
-# harness runtime state
-.claude/.harness-state/
-.claude/settings.local.json
